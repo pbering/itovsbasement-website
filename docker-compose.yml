@@ -1,0 +1,6 @@
+services:
+
+  blog:
+    image: pbering/itovsbasement-website
+    build:
+      context: src/Blog.Website

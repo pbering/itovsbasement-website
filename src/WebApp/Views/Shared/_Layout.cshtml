@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @RenderSection("Head", required: true)
+    <link href="@Context.GetAbsoluteUrl("/rss.xml")" type="application/rss+xml" rel="alternate" title="itovsbasement.net">
+    <environment names="Development">
+        <link rel="stylesheet" href="/css/poole.css">
+        <link rel="stylesheet" href="/css/hyde.css">
+        <link rel="stylesheet" href="/css/site.css">
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true">
+    </environment>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="container sidebar-sticky">
+            <div class="sidebar-about">
+                <h2>
+                    <a href="/">
+                        itovsbasement.net
+                    </a>
+                </h2>
+                <p class="lead">PLACEHOLDER 1</p>
+                <p class="awards">PLACEHOLDER 2</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://example.com">LINK 1</a>
+                <a class="sidebar-nav-item" href="https://example.com">LINK 2</a>
+                <a class="sidebar-nav-item" href="https://example.com">LINK 3</a>
+                <a class="sidebar-nav-item" href="@Context.GetAbsoluteUrl("/rss.xml")">rss</a>
+            </nav>
+        </div>
+    </div>
+    <div class="content container">
+        @RenderBody()
+    </div>
+</body>
+</html>
