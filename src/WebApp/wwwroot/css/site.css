@@ -27,6 +27,10 @@ body {
     background-color: #647687
 }
 
+    .content h1 {
+        color: white;
+    }
+
 .button {
     display: block;
     padding: 10px;
@@ -39,10 +43,10 @@ body {
     font-weight: bold;
 }
 
-.button.red {
-    background-color: #CC0000;
-    color: white;
-}
+    .button.red {
+        background-color: #CC0000;
+        color: white;
+    }
 
 .danishtime {
     display: block;
@@ -97,6 +101,11 @@ a {
         margin: 5px;
     }
 
-    .posts .post h2 {
-   line-height:0px;
-    }
+        .posts .post h2 {
+            line-height: 0px;
+        }
+
+.content .post {
+    background-color: white;
+    padding: 20px;
+}

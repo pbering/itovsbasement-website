@@ -2,7 +2,7 @@
 title: TEST 1 TITLE
 summary: TEST 1 SUMMART
 date: 2023-01-27
-tags: tag1, tag2, tag3
+tags: project, art, tag3
 ---
 
 Bacon ipsum dolor amet landjaeger sirloin cupim tenderloin ham. Andouille shoulder jowl boudin biltong cupim beef beef ribs. Cow prosciutto burgdoggen pastrami sausage pork chop meatball. Flank kevin cupim, porchetta short loin venison shankle chislic spare ribs cow salami ham alcatra andouille. Venison pancetta short loin shoulder.

@@ -2,7 +2,7 @@
 title: TEST 2 TITLE
 summary: TEST 2 SUMMART
 date: 2023-04-01
-tags: tag3
+tags: tag3, project
 ---
 
 Turkey buffalo venison pork belly ribeye alcatra sausage meatball cow pig picanha spare ribs. Drumstick pork chop tenderloin biltong shank. Ribeye brisket kevin sausage ground round corned beef pork belly fatback t-bone. Boudin meatball shank sirloin doner salami bresaola venison beef pork loin jowl sausage t-bone filet mignon. Pork belly venison meatball, ham rump chislic doner meatloaf pork loin drumstick prosciutto short ribs. Bresaola beef ribs spare ribs, corned beef doner kielbasa kevin t-bone.
