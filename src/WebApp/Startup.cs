@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.StaticFiles;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Net.Http.Headers;
@@ -31,7 +30,7 @@ namespace WebApp
             services.AddResponseCaching();
             services.AddResponseCompression();
             services.AddSingleton(x => new MarkdownPipelineBuilder().UseAdvancedExtensions().UseColorCode(StyleDictionary.DefaultDark).Build());
-                        
+
             if (_environment.IsDevelopment())
             {
                 services.AddSingleton<IPostRepository, DevelopmentPostRepository>();

@@ -10,7 +10,3 @@ Turkey buffalo venison pork belly ribeye alcatra sausage meatball cow pig picanh
 ## Venison
 
 Venison kevin burgdoggen ham hock. Sausage ground round flank, shankle prosciutto pancetta boudin jowl cow fatback rump spare ribs ham capicola. Picanha ham hock beef biltong pork chop ground round short loin buffalo venison chislic. Short ribs cow sirloin fatback kielbasa landjaeger prosciutto turkey salami ribeye pastrami tenderloin venison rump flank. Strip steak chicken kevin landjaeger buffalo jowl. Pork belly burgdoggen landjaeger, pork chop andouille turducken ham hock flank jowl kielbasa ham.
-
-## Capicola
-
-...

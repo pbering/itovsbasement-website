@@ -1,8 +1,13 @@
 ﻿@model WebApp.Models.HomeModel
+
+<div class="title">
+    <img src="@Context.GetAbsoluteUrl("/content/images/welcomebanner.png")" title="Welcome to ItovsBasement" alt="Welcome banner" height="400" />
+</div>
+
 @await Html.PartialAsync("_PostList", Model)
 
 @section Head {
-    <title>@Model.Title - invokecommand.net</title>
+    <title>@Model.Title - itovsbasement.net</title>
     <meta name="description" content="@Model.Description">
     <meta property="og:type" content="website">
     <meta property="og:title" content="@Model.Title - itovsbasement.net">
