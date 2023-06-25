@@ -17,10 +17,12 @@
     <div class="container">
         <div class="sidebar">
             <a class="button red" href="/">ItovsBasement</a>
-            <a class="button" href="/">LINK 2</a>
-            <a class="button" href="/">LINK 3</a>
-            <a class="button" href="/">LINK 4</a>
-            <a class="button" href="/">LINK 5</a>
+            <a class="button" href="/">about me</a>
+            <a class="button" href="/">portfolio</a>
+            <a class="button" href="/">past work</a>
+            <span class="navtitle">tags</span>
+            @await Html.PartialAsync("_Tags")
+            @await Component.InvokeAsync("Tags")
             <span class="danishtime">Denmark<br />@TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time"))</span>
         </div>
         <div class="content">

@@ -24,12 +24,9 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-    background-color: #647687
+    background-color: #647687;
+    color: white;
 }
-
-    .content h1 {
-        color: white;
-    }
 
 .button {
     display: block;
@@ -56,9 +53,15 @@ body {
     color: #000000;
     font-weight: bold;
 }
+.navtitle {
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-bottom: 2px;
+}
 
 @media (max-width: 767px) {
-
     /* Styles for mobile devices */
     .container {
         flex-direction: column;
