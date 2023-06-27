@@ -1,6 +1,7 @@
 ﻿html {
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 20px;
+    background-color: #647687;
 }
 
 html,
@@ -19,12 +20,12 @@ body {
     width: 300px;
     background-color: #006666;
     padding: 10px;
+    height: 100%;
 }
 
 .content {
     flex: 1;
-    padding: 20px;
-    background-color: #647687;
+    padding: 10px;
     color: white;
 }
 
@@ -35,7 +36,7 @@ body {
     background-color: #e0e0e0;
     border: none;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
     color: #2b4444;
     font-weight: bold;
 }
@@ -53,6 +54,7 @@ body {
     color: #000000;
     font-weight: bold;
 }
+
 .navtitle {
     color: white;
     text-align: center;
@@ -85,6 +87,14 @@ a {
     color: #57575C;
 }
 
+.post-title a {
+    text-decoration: none;
+}
+
+.post-title {
+    line-height: 0.5em;
+}
+
 
 .title {
     text-align: center;
@@ -111,4 +121,5 @@ a {
 .content .post {
     background-color: white;
     padding: 20px;
+    color: black;
 }

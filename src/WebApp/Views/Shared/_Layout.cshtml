@@ -21,7 +21,6 @@
             <a class="button" href="/">portfolio</a>
             <a class="button" href="/">past work</a>
             <span class="navtitle">tags</span>
-            @await Html.PartialAsync("_Tags")
             @await Component.InvokeAsync("Tags")
             <span class="danishtime">Denmark<br />@TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time"))</span>
         </div>

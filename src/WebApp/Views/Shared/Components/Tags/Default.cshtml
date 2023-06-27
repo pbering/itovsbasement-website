@@ -1,1 +1,7 @@
-﻿TAGS COMPONENT
+﻿@using WebApp.Components;
+@model TagsModel
+
+@foreach (var tag in Model.Tags)
+{
+    @Html.ActionLink(tag, "Index", "Tags", new {name = tag}, new {@class="button"})
+}

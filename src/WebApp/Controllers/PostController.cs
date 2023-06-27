@@ -2,6 +2,7 @@
 using System.Linq;
 using WebApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace WebApp.Controllers
 {
@@ -16,9 +17,10 @@ namespace WebApp.Controllers
 
         [ResponseCache(Duration = 86400, Location = ResponseCacheLocation.Any)]
         [Route("posts/{*name}")]
-        public IActionResult Index(string name)
+        public async Task<IActionResult> Index(string name)
         {
-            var post = _repository.Get().FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            var posts = await _repository.GetAsync();
+            var post = posts.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
 
             if (post != null)
             {

@@ -30,15 +30,7 @@ namespace WebApp
             services.AddResponseCaching();
             services.AddResponseCompression();
             services.AddSingleton(x => new MarkdownPipelineBuilder().UseAdvancedExtensions().UseColorCode(StyleDictionary.DefaultDark).Build());
-
-            if (_environment.IsDevelopment())
-            {
-                services.AddSingleton<IPostRepository, DevelopmentPostRepository>();
-            }
-            else
-            {
-                services.AddSingleton<IPostRepository, PostRepository>();
-            }
+            services.AddSingleton<IPostRepository, PostRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

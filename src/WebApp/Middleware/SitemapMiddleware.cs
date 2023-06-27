@@ -23,7 +23,7 @@ namespace WebApp.Middleware
         {
             if (context.Request.Path.Equals(new PathString("/sitemap.xml"), StringComparison.OrdinalIgnoreCase))
             {
-                var posts = _postRepository.Get();
+                var posts = await _postRepository.GetAsync();
 
                 XNamespace ns = "http://www.sitemaps.org/schemas/sitemap/0.9";
 

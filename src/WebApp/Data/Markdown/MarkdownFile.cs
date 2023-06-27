@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace WebApp.Data.Markdown
 {
@@ -22,11 +23,11 @@ namespace WebApp.Data.Markdown
         public string Body { get; internal set; }
         public Dictionary<string, string> Fields { get; }
 
-        public void Parse(MarkdownPipeline markdownPipeline)
+        public async Task ParseAsync(MarkdownPipeline markdownPipeline)
         {
             using TextReader reader = new StreamReader(_file.OpenRead(), Encoding.UTF8);
             var done = false;
-            var line = reader.ReadLine();
+            var line = await reader.ReadLineAsync();
 
             if (string.IsNullOrEmpty(line))
             {

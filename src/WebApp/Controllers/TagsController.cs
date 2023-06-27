@@ -2,6 +2,8 @@
 using WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using System;
+using System.Threading.Tasks;
 
 namespace WebApp.Controllers
 {
@@ -16,9 +18,10 @@ namespace WebApp.Controllers
 
         [ResponseCache(Duration = 86400, Location = ResponseCacheLocation.Any)]
         [Route("tags/{*name}")]
-        public IActionResult Index(string name)
+        public async Task<IActionResult> Index(string name)
         {
-            var model = new HomeModel(_repository.Get().Where(p => p.Tags.Contains(name)));
+            var posts = await _repository.GetAsync();
+            var model = new HomeModel(posts.Where(p => p.Tags.Contains(name)));
 
             if (model.Posts.Any())
             {

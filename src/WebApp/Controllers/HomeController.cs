@@ -1,6 +1,7 @@
-﻿using WebApp.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using WebApp.Data;
 using WebApp.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers
 {
@@ -14,9 +15,11 @@ namespace WebApp.Controllers
         }
 
         [ResponseCache(Duration = 86400, Location = ResponseCacheLocation.Any)]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(new HomeModel(_repository.Get())
+            var posts = await _repository.GetAsync();
+
+            return View(new HomeModel(posts)
             {
                 Title = "Home",
                 Url = "/"
